@@ -7,11 +7,12 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   words = []
-  text.to_a
-  if text.match(/\A(un)/) and text.match(/\z(ing)/)
-    words << 
-  end
-  false
+  text = text.to_a
+  text.each do |word|
+    if text.match(/\A(un)/) and text.match(/\z(ing)/)
+      words << word
+    end
+  words
 end
 
 def words_five_letters_long(text)
