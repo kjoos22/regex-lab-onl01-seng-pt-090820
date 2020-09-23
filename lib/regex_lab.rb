@@ -7,6 +7,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   words = []
+  text.to_a
   if text.match(/\A(un)/) and text.match(/\z(ing)/)
     words << 
   end
