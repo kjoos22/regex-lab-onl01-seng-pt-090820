@@ -11,7 +11,7 @@ def words_starting_with_un_and_ending_with_ing(text)
   words = []
   text = text.split(" ")
   text.each do |word|
-    if word.match(/\A(un)/) and word.match(/\z(ing)/)
+    if word.match(/\A(un)/) #and word.match(/\z(ing)/)
       words << word
     end
   end
