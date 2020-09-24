@@ -34,9 +34,8 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
     if text[-1].match(/./)
       return true
     end
-  false
   end
-  false
+  return false
 end
 
 def valid_phone_number?(phone)
